@@ -1,0 +1,20 @@
+.card-container {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.card-container-root {
+  background-color: #474a51;
+  color: white;
+}
+
+.card-container-focus {
+  background-color: blueviolet;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 800px;
+}
