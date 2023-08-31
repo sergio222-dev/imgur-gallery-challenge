@@ -4,4 +4,7 @@ export interface ImageAggregate {
   description: string;
   link: string;
   type: 'video' | 'image'
+  upVote: number;
+  downVote: number;
+  score: number;
 }

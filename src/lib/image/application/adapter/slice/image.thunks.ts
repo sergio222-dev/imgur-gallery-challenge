@@ -1,10 +1,17 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { ImageAggregate } from "@/lib/image/domain/ImageAggregate";
-import { container } from "@/lib/challenge.module";
+import { sectionOptions, sortOptions, windowOptions } from "@/lib/shared/domain/types/utils";
 
-export const fetchGallery = createAsyncThunk<ImageAggregate[]>(
+interface FetchGalleryParameters {
+  option: sectionOptions;
+  window: windowOptions;
+  sort: sortOptions;
+  viral: boolean;
+}
+
+export const fetchGallery = createAsyncThunk<ImageAggregate[], FetchGalleryParameters>(
   'image/fetchGallery',
-  async (_) => {
-    return await fetch('/api/gallery').then(res => res.json()) as ImageAggregate[];
+  async ({option, viral, window, sort}) => {
+    return await fetch(`/api/gallery/${option}/${sort}/${window}/${viral}`).then(res => res.json()) as ImageAggregate[];
   }
 );

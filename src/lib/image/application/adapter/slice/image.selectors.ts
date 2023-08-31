@@ -26,3 +26,26 @@ export const totalPages = (state: ReduxState) => {
   const totalPages = state.image.pages;
   return totalPages;
 }
+
+export const selectCurrentImage = (state: ReduxState): ImageAggregate => {
+  const currentImageId = state.image.selectedImageId;
+
+  if ( !currentImageId ) {
+    const emptyImage: ImageAggregate = {
+      link: '',
+      title: '',
+      description: '',
+      upVote: 0,
+      downVote: 0,
+      score: 0,
+      id: '',
+      type: "image",
+    }
+
+    return emptyImage;
+  }
+
+  const currentImage = state.image.entities[currentImageId];
+
+  return currentImage;
+}
