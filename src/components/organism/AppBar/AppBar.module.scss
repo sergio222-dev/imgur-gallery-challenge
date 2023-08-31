@@ -1,0 +1,35 @@
+.appbar {
+  background: rgb(71,74,81);
+  background: linear-gradient(0deg, rgba(71,74,81,1) 0%, rgba(34,43,91,1) 46%, rgba(23,21,68,1) 100%);
+
+
+  .toolbar {
+    justify-content: space-between;
+  }
+
+  .left-button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    background-color: #6432f9;
+    border-radius: 0;
+
+    &[data-selected="true"] {
+      background-color: #1bb76e;
+    }
+  }
+
+  .select {
+    color: white;
+
+    fieldset {
+      border: none;
+    }
+
+    .icon {
+      fill: white;
+    }
+  }
+}
