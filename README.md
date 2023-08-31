@@ -26,6 +26,8 @@ Navigate to the project directory:
 cd imgur-gallery-challenge
 ```
 
+Rename the file ``.env.example`` to ``.env.local`` and replace the value of ``NEXT_PUBLIC_IMGUR_CLIENT_ID`` with an appropriate one
+
 Install dependencies using Yarn:
 ```sh
 yarn install
