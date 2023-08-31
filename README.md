@@ -1,7 +1,5 @@
 
-# Project Name
-
-Welcome to Project Name! This project is built using Yarn and requires Node.js version 19.5.0 or higher.
+# Imgur Gallery Challenge
 
 ## Getting Started
 
@@ -16,7 +14,7 @@ Follow these steps to get the project up and running on your local machine.
   npm install -g yarn
   ```
 
-# Installation
+## Installation
 Clone this repository to your local machine or download and extract the ZIP file.
 
 ```sh
