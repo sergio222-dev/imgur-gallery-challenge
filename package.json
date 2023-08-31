@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "engines": {
-    "node": ">=19.5.0"
+    "node": ">=18.x"
   },
   "packageManager": "^yarn@1.22.19",
   "dependencies": {

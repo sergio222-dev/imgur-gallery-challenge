@@ -9,7 +9,7 @@ Follow these steps to get the project up and running on your local machine.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) version 19.5.0 or higher is required.
+- [Node.js](https://nodejs.org/) version 18.x or higher is required.
 - [Yarn](https://yarnpkg.com/) should be installed. You can install it globally using the following command:
 
   ```sh
